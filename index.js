@@ -27,10 +27,12 @@ app.set('views', path.join(__dirname , 'views'));
 
 
 app.get('/',(req,res)=>{
-    res.render('index1')
+    res.render('home')
 })
 
-
+app.get('/home.ejs',(req,res)=>{
+    res.render('home')
+})
 
 app.get('/all-quotes.ejs',(req,res)=>{
     res.render('all-quotes')
